@@ -29,7 +29,7 @@ func main() {
 	//check that user has inputed a valid IP
 	match, _ := regexp.MatchString(`^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$`, ip)
 	if match == true {
-		fmt.Printf("Searching DShield for %s...\n", ip)
+		fmt.Printf("\nSearching DShield for %s...\n", ip)
 
 		//calls function of ip.go
 		result := getIP(ip)
